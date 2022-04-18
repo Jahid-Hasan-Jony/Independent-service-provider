@@ -1,14 +1,5 @@
-.BannerSection {
-    background-image: url('../../Image/banner.jpg');
-    background-size: cover;
-    height: auto;
-}
-
-.BannerSection h1,
-h2,
-h3,
-h4 {
-    color: white;
+.BannerSection img {
+    transform: scaleX(-1);
 }
 
 .BannerSection h1 {
