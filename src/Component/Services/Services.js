@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import photo1 from '../../Image/img1.jpg'
 import photo2 from '../../Image/img2.jpg'
 import photo3 from '../../Image/img3.jpg'
@@ -18,7 +19,7 @@ const Services = () => {
                             <p className="card-text">Professional camera and lens kits</p>
                             <p className="card-text">Single-shooter and multi-shooter options</p>
                         </div>
-                        <button className='btn btn-primary btn-lg m-3'>Add to Card</button>
+                        <Link to='/checkout' className='btn btn-primary btn-lg m-3'>Check Out</Link>
                     </div>
                 </div>
                 <div className="col">
@@ -31,7 +32,7 @@ const Services = () => {
                             <p className="card-text">Professional lighting setup</p>
                             <p className="card-text">Professional camera and lens kits</p>
                         </div>
-                        <button className='btn btn-primary btn-lg m-3'>Add to Card</button>
+                        <Link to='/checkout' className='btn btn-primary btn-lg m-3'>Check Out</Link>
                     </div>
                 </div>
                 <div className="col">
@@ -44,7 +45,7 @@ const Services = () => {
                             <p className="card-text">Photo metadata to SEO best practices</p>
                             <p className="card-text">Photo library hosting</p>
                         </div>
-                        <button className='btn btn-primary btn-lg m-3'>Add to Card</button>
+                        <Link to='/checkout' className='btn btn-primary btn-lg m-3'>Check Out</Link>
                     </div>
                 </div>
             </div>
