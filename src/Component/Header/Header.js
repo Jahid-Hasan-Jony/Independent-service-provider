@@ -23,6 +23,9 @@ const Header = () => {
                             <Link className="nav-link" aria-current="page" to="/home">Home</Link>
                         </li>
                         <li className="nav-item">
+                            <Link className="nav-link" aria-current="page" to="/about">About ME</Link>
+                        </li>
+                        <li className="nav-item">
                             <Link className="nav-link" aria-current="page" to="/blog">Blog</Link>
                         </li>
                         <li className="nav-item">
