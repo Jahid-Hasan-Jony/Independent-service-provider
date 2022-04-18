@@ -11,7 +11,7 @@ const Banner = () => {
                         <h3>Hello Everyone</h3>
                         <h1 className='fw-bold'>JN's Photography</h1>
                         <h4 className='pb-5'>Capture Your Best Moment</h4>
-                        <button type="button" class="btn btn-outline-dark btn-lg">Photo Gallery</button>
+                        <button type="button" className="btn btn-outline-dark btn-lg">Photo Gallery</button>
                     </div>
                     <div className='col-md-6'>
                         <img src={Banner2} alt='Banner' className='w-100' />

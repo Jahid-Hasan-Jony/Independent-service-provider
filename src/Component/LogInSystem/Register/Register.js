@@ -5,21 +5,22 @@ import Auth from '../../../Firebase/Firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
+    // using firebase-hooks for create user
+    //varify email
     const [
         createUserWithEmailAndPassword,
         user,
-        loading,
-        error,
     ] = useCreateUserWithEmailAndPassword(Auth, { sendEmailVerification: true });
 
     const navigate = useNavigate()
+
+    // if user have
     if (user) {
         navigate('/home')
     }
 
     const handleRegister = (event) => {
         event.preventDefault();
-        let userName = event.target.name.value
         let email = event.target.email.value
         let password = event.target.password.value
         createUserWithEmailAndPassword(email, password)
