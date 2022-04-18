@@ -1,0 +1,10 @@
+.navbar {
+    background-color: transparent;
+}
+
+.nav-link,
+.navbar-brand {
+    font-size: 25px;
+    color: white !important;
+    font-weight: 500;
+}

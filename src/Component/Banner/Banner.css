@@ -1,0 +1,29 @@
+.BannerSection {
+    background-image: url('../../Image/banner.jpg');
+    background-size: cover;
+    height: auto;
+}
+
+.BannerSection h1,
+h2,
+h3,
+h4 {
+    color: white;
+}
+
+.BannerSection h1 {
+    font-size: 50px;
+    color: rgb(238, 38, 238);
+}
+
+.BannerSection h2 {
+    font-size: 44px;
+}
+
+.BannerSection h3 {
+    font-size: 32px;
+}
+
+.BannerSection h4 {
+    font-size: 26px;
+}
