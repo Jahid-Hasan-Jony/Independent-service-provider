@@ -11,11 +11,17 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(Auth);
+    const errorElement;
     const navigate = useNavigate()
     const location = useLocation();
     let from = location.state?.from?.pathname || '/';
     if (user) {
         navigate(from, { replace: true })
+    }
+    if (error) {
+        errorElement = <p className='text-danger'>
+            Error : {error?.message}
+        </p>
     }
 
     const handleLogin = (event) => {
@@ -36,8 +42,9 @@ const Login = () => {
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                     <input type="password" name='password' className="form-control" id="exampleInputPassword1" required />
                 </div>
-                <Link className='d-block pb-3' to='/register'>Create a new Account?</Link>
+                <Link className='d-block pb-3' to='/register'>Create a new Account? Please Log in</Link>
                 <button type="submit" className="btn btn-outline-primary d-block w-100 btn-lg">Log In</button>
+                {errorElement}
             </form>
             <SocialLogin />
         </div>
